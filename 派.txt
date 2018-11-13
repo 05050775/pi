@@ -11,8 +11,7 @@ enable_uart=1
 
 
 wifi 手機:
-sudo nano 
-/etc/wpa_supplicant/wpa_supplicant.conf
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 加入
 network={
 scan_ssid=1

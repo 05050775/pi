@@ -1,0 +1,39 @@
+config 加3行:
+dtoverlay=pi3-miniuart-bt
+core_freq=250
+enable_uart=1
+
+
+將 quiet splash 的 quite 移除
+
+
+
+
+
+wifi 手機:
+sudo nano 
+/etc/wpa_supplicant/wpa_supplicant.conf
+加入
+network={
+scan_ssid=1
+ssid="UJ"
+psk="199961124"
+proto=RSN
+key_mgmt=WPA-PSK
+pairwise=CCMP
+auth_alg=OPEN
+}
+
+
+
+sudo adduser username
+sudo passwd username
+
+
+
+i='*'
+for n in range(0,10):
+    print(i)
+    i=i+'*';
+
+打冒號 wq跳出
